@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    document.getElementsByTagName("html")[0].className += " js";
+  </script>
+  <link id="codyframe" rel="stylesheet" href="assets/css/style.css">
+  <!-- browsers not supporting CSS variables -->
+  <script>
+    if (!('CSS' in window) || !CSS.supports('color', 'var(--color-var)')) {
+      var cfStyle = document.getElementById('codyframe');
+      if (cfStyle) {
+        var href = cfStyle.getAttribute('href');
+        href = href.replace('style.css', 'style-fallback.css');
+        cfStyle.setAttribute('href', href);
+      }
+    }
+  </script>
+  <title>Get Started | CodyFrame</title>
+</head>
+
+<body class="font-primary">
+
+  <header class="header position-relative js-header">
+    <div class="header__container container max-width-lg grid">
+      <div class="header__logo text-xs col-6@xs">
+        <a href="#0" class="text-decoration-none">
+
+          <div class="grid">
+            <div class="col-6 col-3@xs col-2@sm">
+              <img src="assets/img/theweb-logo.png" alt="theweb logo" class="icon--xl">
+            </div>
+            <div class="col-6 col-3@sm grid items-center">
+              <div class="text-center">
+                <h1 class="header__title text-xl font-heading font-bold color-heading">
+                  theweb
+                </h1>
+                <div class="header__subtitle color-heading-lighter font-bold">
+                  digital company
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </a>
+      </div>
+
+      <button class="btn btn--subtle header__trigger js-header__trigger col-3@xs col-3@sm" aria-label="Toggle menu"
+        aria-expanded="false" aria-controls="header-nav">
+        <i class="header__trigger-icon" aria-hidden="true"></i>
+        <span>Menu</span>
+      </button>
+
+      <nav class="header__nav js-header__nav col-6@md text-lg id=" header-nav" role="navigation" aria-label="Main">
+        <div class="header__nav-inner">
+          <div class="header__label">Main menu</div>
+          <ul class="header__list text-uppercase text-sm">
+            <li class="header__item"><a href="#0" class="text-decoration-none color-heading-light">Services</a></li>
+            <li class="header__item"><a href="#0" class="text-decoration-none color-heading-light">Expertise</a></li>
+            <li class="header__item"><a href="#0" class="text-decoration-none color-heading-light">Technologies</a></li>
+            <li class="header__item"><a href="#0" class="text-decoration-none color-heading-light">Contact us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
